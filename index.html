@@ -11,7 +11,7 @@
 
 <body>
     <div style="display: inline-block; margin-top: 1%; margin-left: 1%;">
-        <button class="btn btn-primary text-center">Login</button>
+        <button class="btn btn-primary text-center" onclick="SignIn()">Login</button>
         <button class="btn btn-primary">Log out</button>
     </div>
     <div class="container">
@@ -35,20 +35,8 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
-    <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyBODGUoOS6Wo4VFsTXCOk-ZmF01WiZ_XGk",
-            authDomain: "realtime-comment-system.firebaseapp.com",
-            projectId: "realtime-comment-system",
-            storageBucket: "realtime-comment-system.appspot.com",
-            messagingSenderId: "489222106751",
-            appId: "1:489222106751:web:ddb717d6eb761f90ed594a"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-    </script>
     <script src="./app.js"></script>
 </body>
 
